@@ -1,0 +1,44 @@
+% Uncomment the next line if you want your article to appear in one column.
+% The default is two columns
+% \enablemode[onecolumn] % one column, with wide outer margins
+% \enablemode[asym]      % one column, with wide left margin (
+
+
+% A mode nosubsub defines only two levels of sectioning. If you
+% don't need more and use the two-column layout, then this option
+% will probably improve the looks of your paper.
+% \enablemode[nosubsub]
+
+\usemodule[maps]
+
+\starttext
+
+\startArticle [
+    Title=<+ Title of the article +>,
+    SubTitle=<+ Optional subtitle +>,
+    Number=<+ MAP Number +>,
+    Period=<+ MAP Period +>,
+    Author=<+ Author plus contact details +>,
+   RunningAuthor=<+ Author name to appear in the header +>
+ ]
+
+% The Author parameter doesn't require any particular structure.
+% Add a RunningAuthor parameter if the Author parameter is too
+% elaborate or complex for use in a page header.
+
+\startAbstract
+ <+ Write Article Abstract +>
+\stopAbstract
+
+\startKeywords
+ <+ Write Article Keywords +>
+\stopKeywords
+
+<+ Write Article +>
+
+% MAPS places footnotes at the end of the article
+\subject{Note}
+\placefootnotes
+
+\stopArticle
+\stoptext
